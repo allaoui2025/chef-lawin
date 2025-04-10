@@ -3,6 +3,13 @@ on:
   push:
     branches:
       - main
+permissions:
+  actions: read
+  contents: read
+  id-token: write
+  packages: read
+  deployments: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
