@@ -75,7 +75,7 @@ jobs:
 
       # Étape 7 : Upload les rapports comme artifacts
       - name: Upload test reports
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: test-reports
           path: reports/
